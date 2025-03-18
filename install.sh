@@ -5,7 +5,7 @@ apt update
 apt install update-notifier -y
 
 # Remove motd files
-if [ -e /etc/update-motd.d]; then
+if [ -e /etc/update-motd.d ]; then
     rm -rf /etc/update-motd.d
 fi
 
