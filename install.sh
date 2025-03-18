@@ -2,7 +2,6 @@
 
 # Install packages
 apt update
-apt install toilet -y
 apt install update-notifier -y
 
 # Download the archive
