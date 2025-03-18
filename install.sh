@@ -15,7 +15,7 @@ mkdir /etc/update-motd.d
 # Download the archive
 curl -L https://github.com/mrailton/motd/archive/main.tar.gz | tar -zxv
 
-# Move unzipped motd files to /etc
+# Move unzipped motd files
 mv motd-main/motd/* /etc/update-motd.d
 
 # Clean up downloaded files
