@@ -9,6 +9,10 @@ if [ -e /etc/update-motd.d ]; then
     rm -rf /etc/update-motd.d
 fi
 
+if [-e /etc/motd ]; then
+    rm /etc/motd
+fi
+
 # Create dir
 mkdir /etc/update-motd.d
 
