@@ -4,12 +4,13 @@
 apt update
 apt install update-notifier -y
 
-# remove motd files
+# Remove motd files
 if [ -e /etc/update-motd.d]; then
     rm -rf /etc/update-motd.d
-
-    mkdir /etc/update-motd.d
 fi
+
+# Create dir
+mkdir /etc/update-motd.d
 
 # Download the archive
 curl -L https://github.com/mrailton/motd/archive/main.tar.gz | tar -zxv
